@@ -29,7 +29,11 @@ const BlurFade = ({
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  // Cast `inViewMargin` because framer-motion's `margin` option has a
+  // specific `MarginType` which can be stricter than a plain string in some
+  // environments. The cast keeps this change minimal and avoids widening the
+  // public API surface of the component.
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin as any });
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
