@@ -12,6 +12,14 @@ export const DATA = {
   summary:
     "I’m a full-stack developer pursuing a B.Tech in Computer Science & Engineering. I previously worked as a Quantitative Research Consultant at WorldQuant and am now deeply interested in Web3, focusing on building user centric decentralized applications that solve real world problems.",
   avatarUrl: "/my.jpg",
+  
+  availability: {
+    text: "Available - Open to new freelance projects and collaborations",
+    color: "green",
+    // optional link when clicking the availability badge
+    link: "mailto:amankumarr7390@gmail.com",
+  },
+
   skills: [
     "React",
     "Next.js",
@@ -24,7 +32,7 @@ export const DATA = {
     "Firebase",
     "Docker",
     "AWS",
-    "C++",
+    
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

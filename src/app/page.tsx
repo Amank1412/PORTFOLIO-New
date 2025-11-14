@@ -29,6 +29,28 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              {DATA.availability && (
+                <BlurFade delay={BLUR_FADE_DELAY}>
+                  <Link
+                    href={DATA.availability.link ?? "#"}
+                    className="mt-4 inline-flex items-center gap-3 rounded-lg border px-5 py-2 text-sm mx-auto"
+                  >
+                    <span
+                      aria-hidden
+                      className={
+                        `inline-block h-3 w-3 rounded-full ${
+                          DATA.availability.color === "green"
+                            ? "bg-emerald-400 glow-green"
+                            : DATA.availability.color === "red"
+                            ? "bg-red-500"
+                            : "bg-gray-400"
+                        }`
+                      }
+                    />
+                    <span className="text-sm">{DATA.availability.text}</span>
+                  </Link>
+                </BlurFade>
+              )}
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
