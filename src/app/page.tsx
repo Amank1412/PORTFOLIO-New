@@ -38,7 +38,7 @@ export default function Page() {
                     <span
                       aria-hidden
                       className={
-                        `inline-block h-3 w-3 rounded-full ${
+                        `inline-block flex-shrink-0 h-3 w-3 rounded-full ${
                           DATA.availability.color === "green"
                             ? "bg-emerald-400 glow-green"
                             : DATA.availability.color === "red"

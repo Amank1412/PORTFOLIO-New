@@ -95,6 +95,8 @@
     .glow-green {
       display: inline-block;
       position: relative;
+      overflow: visible;
+      transform-origin: center;
       animation: glow 1.8s ease-in-out infinite;
     }
 
