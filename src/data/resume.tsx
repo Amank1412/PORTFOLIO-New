@@ -17,12 +17,12 @@ export const DATA = {
     "Next.js",
     "Typescript",
     "Node.js",
+    "C++",
     "Express",
     "MongoDB",
     "PostgreSQL",
     "Docker",
     "AWS",
-    "C++",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
