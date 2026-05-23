@@ -8,18 +8,10 @@ export const DATA = {
   location: "New Delhi, India",
   locationLink: "https://www.google.com/maps/place/new+delhi",
   description:
-    "full-stack developer, building apps with react, node.js & typescript.",
+    "full-stack developer building apps with react, node.js & typescript, sharing on X",
   summary:
-    "I’m a full-stack developer pursuing a B.Tech in Computer Science & Engineering. I previously worked as a Quantitative Research Consultant at WorldQuant and am now deeply interested in Web3, focusing on building user centric decentralized applications that solve real world problems.",
+    "I'm a full-stack developer and B.Tech CSE student. Currently at a stealth startup in Austin, working across both product and growth, and constantly building products on the side.\n\nPreviously Founding Engineer at Oceanlab and a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
   avatarUrl: "/my.jpg",
-  
-  availability: {
-    text: "Available - Open to new freelance projects and collaborations",
-    color: "green",
-    // optional link when clicking the availability badge
-    link: "mailto:amankumarr7390@gmail.com",
-  },
-
   skills: [
     "React",
     "Next.js",
@@ -27,16 +19,14 @@ export const DATA = {
     "Node.js",
     "Express",
     "MongoDB",
-    "TailwindCSS",
     "PostgreSQL",
-    "Firebase",
     "Docker",
     "AWS",
-    
+    "C++",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://medium.com/@Amank1412", icon: NotebookIcon, label: "Blog", external: true },
   ],
   contact: {
     email: "amankumarr7390@gmail.com",
@@ -74,15 +64,40 @@ export const DATA = {
 
   work: [
     {
+      company: "Stealth Startup",
+      href: "#",
+      badges: [],
+      location: "Austin, Texas, United States · Remote",
+      title: "Product Engineer",
+      logoUrl: "/stealth.jpg",
+      start: "Mar 2026",
+      end: "Present",
+      description:
+        "Shipping product end-to-end while leading growth experiments and user acquisition with the founding team.",
+    },
+    {
+      company: "Oceanlab Technology",
+      href: "#",
+      badges: [],
+      location: "Singapore · Remote",
+      title: "Founding Engineer",
+      logoUrl: "/oceanlab.jpg",
+      start: "Dec 2025",
+      end: "Dec 2025",
+      description:
+        "Founding engineer building the 0→1 product. Designing core systems, shipping production features, and shaping the early engineering culture.",
+    },
+    {
       company: "WorldQuant",
       href: "https://worldquant.com",
       badges: [],
-      location: "Remote",
+      location: "Old Greenwich, Connecticut, United States · Remote",
       title: "Research Consultant",
       logoUrl: "/worldquant_logo.jpg",
-      start: "May 2025",
-      end: "Oct 2025",
-      description: "Specialized in alpha development for US. markets, conceptualizing and building market-neutral strategies through rigorous quantitative research. Developed and optimized long-short alphas across U.S, global, Asia, markets using diversified datasets to enhance performance and stability.",
+      start: "Jul 2025",
+      end: "Dec 2025",
+      description:
+        "Built and optimized long-short, market-neutral alpha strategies across U.S., global, and Asian markets using diversified datasets.",
     },
   ],
   education: [
@@ -95,82 +110,102 @@ export const DATA = {
       end: "2028",
     },
   ],
-  
   projects: [
     {
-      title: "CoinPulse",
-      href: "https://coin-pulse-flame.vercel.app/",
+      title: "FileDrive",
+      href: "https://file-drive-gamma-five.vercel.app/",
       dates: "2025",
       active: true,
       description:
-        "Built **CoinPulse** a real-time cryptocurrency tracker and wallet dashboard with live market data integration and a responsive React-based UI.",
+        "Minimal file storage app with upload, organize, favorites, trash & restore, and team collaboration. Built with Next.js 14, Clerk auth, and Supabase storage.",
       technologies: [
-        "React.js",
-        "JavaScript",
+        "Next.js",
+        "TypeScript",
+        "Clerk",
+        "Supabase",
         "TailwindCSS",
       ],
       links: [
         {
           type: "Website",
-          href: "https://coin-pulse-flame.vercel.app/",
+          href: "https://file-drive-gamma-five.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Amank1412/CoinPulse",
+          href: "https://github.com/Amank1412/File-drive",
           icon: <Icons.github className="size-3" />,
         },
       ],
-  image: "/coinpulse.jpg",
-  video: "",
-      
+      image: "/filedrive.jpg",
+      video: "",
     },
     {
-      title: "Xcode",
-      href: "https://xcode-navy.vercel.app/",
+      title: "Flowio",
+      href: "https://github.com/Amank1412/Flowio",
       dates: "2025",
       active: true,
       description:
-        "Built **Xcode** a 3D interactive landing page using Spline and React with smooth animations and responsive design.",
-
-
+        "Freelance contract management platform with digital signatures, PDF generation, email delivery, and tiered subscription billing. Free plan with 3 contracts/month, Pro at $2/month.",
       technologies: [
-        "React.js",
-        "JavaScript",
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Resend",
+        "Dodo Payments",
         "TailwindCSS",
-      
-       
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Amank1412/Flowio",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/flowio.jpg",
+      video: "",
+    },
+    {
+      title: "Cardora",
+      href: "https://cardora-topaz.vercel.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "Create and share beautiful digital business cards with no login required. QR codes, shareable links, and direct sharing to X. Encrypted card IDs with Firebase storage and offline support via IndexedDB.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Firebase",
+        "TailwindCSS",
       ],
       links: [
         {
           type: "Website",
-          href: "https://xcode-navy.vercel.app/",
+          href: "https://cardora-topaz.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Amank1412/Xcode",
+          href: "https://github.com/Amank1412/Cardora",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/code.jpg",
-  video: "",
-     
+      image: "/cardora.jpg",
+      video: "",
     },
     {
       title: "Nexora",
       href: "https://nexora-yz8g.vercel.app/",
-      dates: "2025",
+      dates: "2024",
       active: true,
       description:
-        "Built **Nexora**, a modern and responsive web app using React, Vite, and Tailwind CSS with a clean UI and fast performance.",
-
+        "Modern, responsive landing page for a fictional VR developer tools platform. Clean UI with smooth interactions and fast performance.",
       technologies: [
-         "React.js",
-        "JavaScript",
+        "React",
+        "Vite",
         "TailwindCSS",
-       
-      
+        "Lucide React",
       ],
       links: [
         {
@@ -185,39 +220,7 @@ export const DATA = {
         },
       ],
       image: "/nexora.jpg",
-  video: "",
-      
-    },
-    {
-      title: "Sewna",
-      href: "https://intern-assignment-six-weld.vercel.app/",
-      dates: "2025",
-      active: true,
-      description:
-        "Built a Custom Request page for **SEWNA** with React and Tailwind, allowing users to upload outfit inspirations.",
-
-      technologies: [
-         "React.js",
-        "TypeScript",
-        "TailwindCSS",
-       
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://intern-assignment-six-weld.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Amank1412/InternAssignment",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/swena.jpg",
-  video: "",
-      
-       
+      video: "",
     },
   ],
 } as const;

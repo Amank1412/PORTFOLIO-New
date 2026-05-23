@@ -75,50 +75,6 @@
     }
   }
 
-  /* glowing bulb effect for availability dot */
-  @layer components {
-    @keyframes glow {
-      0% {
-        box-shadow: 0 0 0 0 rgba(16,185,129,0.0);
-        transform: scale(1);
-      }
-      40% {
-        box-shadow: 0 0 6px 2px rgba(16,185,129,0.45), 0 0 18px 6px rgba(16,185,129,0.22);
-        transform: scale(1.06);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(16,185,129,0);
-        transform: scale(1);
-      }
-    }
-
-    .glow-green {
-      display: inline-block;
-      position: relative;
-      overflow: visible;
-      transform-origin: center;
-      animation: glow 1.8s ease-in-out infinite;
-    }
-
-    /* subtle blurred halo using pseudo-element */
-    .glow-green::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 28px;
-      height: 28px;
-      border-radius: 9999px;
-      background: rgba(16,185,129,0.12);
-      filter: blur(8px);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.35s ease;
-      animation: glow 1.8s ease-in-out infinite;
-    }
-  }
-
   h3 code {
     @apply !text-lg md:!text-xl;
   }

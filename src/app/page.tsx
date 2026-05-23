@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -22,35 +21,13 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`hi, ${DATA.name.split(" ")[0].toLowerCase()} here`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              {DATA.availability && (
-                <BlurFade delay={BLUR_FADE_DELAY}>
-                  <Link
-                    href={DATA.availability.link ?? "#"}
-                    className="mt-4 inline-flex items-center gap-3 rounded-lg border px-5 py-2 text-sm mx-auto"
-                  >
-                    <span
-                      aria-hidden
-                      className={
-                        `inline-block flex-shrink-0 h-3 w-3 rounded-full ${
-                          DATA.availability.color === "green"
-                            ? "bg-emerald-400 glow-green"
-                            : DATA.availability.color === "red"
-                            ? "bg-red-500"
-                            : "bg-gray-400"
-                        }`
-                      }
-                    />
-                    <span className="text-sm">{DATA.availability.text}</span>
-                  </Link>
-                </BlurFade>
-              )}
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -174,28 +151,37 @@ export default function Page() {
           </div>
         </div>
       </section>
-      {/* Hackathons section removed from data; intentionally omitted */}
-      <section id="contact">
+      <section id="freelance">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="space-y-4">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+                Freelance & Collaboration
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                Have an idea? Let&apos;s ship it.
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Open to freelance work, side projects, and the occasional
+                interesting collab. If you&apos;ve got an idea you want shipped
+                fast, or a product you want help growing, let&apos;s talk.
               </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                <Link
+                  href="https://cal.com/amank1412/15min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
+                >
+                  Book a Free Consultation
+                </Link>
+                <Link
+                  href="mailto:amanwork911@gmail.com"
+                  className="inline-flex items-center justify-center rounded-md border border-foreground/20 px-5 py-2.5 text-sm font-medium hover:bg-foreground/5 transition"
+                >
+                  Send an Email
+                </Link>
+              </div>
             </div>
           </BlurFade>
         </div>
