@@ -112,6 +112,31 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Snapi",
+      href: "https://github.com/Amank1412/Snapi",
+      dates: "2026",
+      active: true,
+      description:
+        "Auto-organised Notion library powered by Gemini. Connect Notion in one click, auto-tag pages by course, topic, and difficulty with AI-generated summaries. Built with Notion OAuth, Supabase RLS, and Dodo Payments subscriptions.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Gemini",
+        "Dodo Payments",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Amank1412/Snapi",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/snapi.jpg",
+      video: "",
+    },
+    {
       title: "FileDrive",
       href: "https://file-drive-gamma-five.vercel.app/",
       dates: "2025",
@@ -192,34 +217,6 @@ export const DATA = {
         },
       ],
       image: "/cardora.jpg",
-      video: "",
-    },
-    {
-      title: "Nexora",
-      href: "https://nexora-yz8g.vercel.app/",
-      dates: "2024",
-      active: true,
-      description:
-        "Modern, responsive landing page for a fictional VR developer tools platform. Clean UI with smooth interactions and fast performance.",
-      technologies: [
-        "React",
-        "Vite",
-        "TailwindCSS",
-        "Lucide React",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://nexora-yz8g.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Amank1412/Nexora",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/nexora.jpg",
       video: "",
     },
   ],
