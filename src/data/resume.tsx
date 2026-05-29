@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "full-stack developer building apps with react, node.js & typescript, sharing on X",
   summary:
-    "I'm a full-stack developer and B.Tech CSE student. Currently at a stealth startup in Austin, working across both product and growth, and constantly building products on the side.\n\nPreviously Founding Engineer at Oceanlab and a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
+    "I'm a full-stack developer and B.Tech CSE student. Currently a Growth Engineer at a stealth startup in Austin, focused on bringing users in and scaling them fast with data-driven systems, while constantly building products on the side.\n\nPreviously a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
   avatarUrl: "/my.jpg",
   skills: [
     "React",
@@ -68,24 +68,12 @@ export const DATA = {
       href: "#",
       badges: [],
       location: "Austin, Texas, United States · Remote",
-      title: "Product Engineer",
+      title: "Growth Engineer",
       logoUrl: "/stealth.jpg",
       start: "Mar 2026",
       end: "Present",
       description:
-        "Shipping product end-to-end while leading growth experiments and user acquisition with the founding team.",
-    },
-    {
-      company: "Oceanlab Technology",
-      href: "#",
-      badges: [],
-      location: "Singapore · Remote",
-      title: "Founding Engineer",
-      logoUrl: "/oceanlab.jpg",
-      start: "Dec 2025",
-      end: "Dec 2025",
-      description:
-        "Founding engineer building the 0→1 product. Designing core systems, shipping production features, and shaping the early engineering culture.",
+        "Focused on bringing users in and scaling them fast with data-driven systems.",
     },
     {
       company: "WorldQuant",
@@ -97,7 +85,7 @@ export const DATA = {
       start: "Jul 2025",
       end: "Dec 2025",
       description:
-        "Built and optimized long-short, market-neutral alpha strategies across U.S., global, and Asian markets using diversified datasets.",
+        "Built and optimized market-neutral long-short alpha strategies across global markets using diverse datasets.",
     },
   ],
   education: [
