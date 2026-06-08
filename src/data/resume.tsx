@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "full-stack developer building apps with react, node.js & typescript, sharing on X",
   summary:
-    "I'm a full-stack developer and B.Tech CSE student. Currently a Growth Engineer at a stealth startup in Austin, focused on bringing users in and scaling them fast with data-driven systems, while constantly building products on the side.\n\nPreviously a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
+    "I'm a full-stack developer and B.Tech CSE student. Recently worked as a Growth Engineer at a stealth startup in Austin, focused on bringing users in and scaling them fast with data-driven systems, while constantly building products on the side.\n\nBefore that, a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
   avatarUrl: "/my.jpg",
   skills: [
     "React",
@@ -71,7 +71,7 @@ export const DATA = {
       title: "Growth Engineer",
       logoUrl: "/stealth.jpg",
       start: "Mar 2026",
-      end: "Present",
+      end: "May 2026",
       description:
         "Focused on bringing users in and scaling them fast with data-driven systems.",
     },
