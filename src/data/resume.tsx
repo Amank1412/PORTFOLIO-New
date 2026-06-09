@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "full-stack developer building apps with react, node.js & typescript, sharing on X",
   summary:
-    "I'm a full-stack developer and B.Tech CSE student. Recently worked as a Growth Engineer at a stealth startup in Austin, focused on bringing users in and scaling them fast with data-driven systems, while constantly building products on the side.\n\nBefore that, a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
+    "I'm a full-stack developer and B.Tech CSE student. Recently worked as a Growth Engineer at Roger (YC S24) in Austin, focused on bringing users in and scaling them fast with data-driven systems, while constantly building products on the side.\n\nBefore that, a Quant Research Consultant at WorldQuant. I've contributed to a bunch of open source, participated in many hackathons, and won several bounties along the way. These days I'm increasingly drawn to Web3, exploring how to build user-centric decentralized apps.",
   avatarUrl: "/my.jpg",
   skills: [
     "React",
@@ -64,12 +64,12 @@ export const DATA = {
 
   work: [
     {
-      company: "Stealth Startup",
-      href: "#",
+      company: "Roger (YC S24)",
+      href: "https://roger.money",
       badges: [],
       location: "Austin, Texas, United States · Remote",
       title: "Growth Engineer",
-      logoUrl: "/stealth.jpg",
+      logoUrl: "/roger.jpg",
       start: "Mar 2026",
       end: "May 2026",
       description:
