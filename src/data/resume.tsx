@@ -65,7 +65,7 @@ export const DATA = {
   work: [
     {
       company: "Roger (YC S24)",
-      href: "https://roger.money",
+      href: "https://www.hireroger.com/",
       badges: [],
       location: "Austin, Texas, United States · Remote",
       title: "Growth Engineer",
@@ -77,7 +77,7 @@ export const DATA = {
     },
     {
       company: "WorldQuant",
-      href: "https://worldquant.com",
+      href: "#",
       badges: [],
       location: "Old Greenwich, Connecticut, United States · Remote",
       title: "Research Consultant",
